@@ -20,7 +20,7 @@ func fizzBuzz(iters int) {
 		} else if i%5 == 0 {
 			fmt.Println(i, "Buzz")
 		} else {
-			print(i, "\n")
+			fmt.Println(i)
 		}
 	}
 }
