@@ -13,14 +13,13 @@ func main() {
 
 func fizzBuzz(iters int) {
 	for i := 1; i < iters; i++ {
-		if i%3 == 0 && i%5 == 0 {
-			fmt.Println(i, "FizzBuzz")
-		} else if i%3 == 0 {
-			fmt.Println(i, "Fizz")
-		} else if i%5 == 0 {
-			fmt.Println(i, "Buzz")
-		} else {
-			fmt.Println(i)
+		fmt.Printf("%d : ", i)
+		if i%3 == 0 {
+			fmt.Print("Fizz")
 		}
+		if i%5 == 0 {
+			fmt.Print("Buzz")
+		}
+		fmt.Print("\n")
 	}
 }
